@@ -21,7 +21,7 @@ public class AlunoService {
 		return alunoRepository.findById(id).orElseThrow(() -> new RuntimeException("Aluno não encontrado"));
 	}
 	
-	public Aluno salvar(Aluno aluno) {
+	public Aluno salvarAluno(Aluno aluno) {
 		return alunoRepository.save(aluno);
 	}
 	
